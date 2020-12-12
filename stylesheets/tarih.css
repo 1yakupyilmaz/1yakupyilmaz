@@ -329,7 +329,6 @@ a {
 
 .slider:hover .photo {
     animation-play-state: paused;
-    -webkit-animation-play-state: paused;
 }
 
 @keyframes slide {
