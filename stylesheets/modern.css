@@ -175,6 +175,7 @@ a {
     height: 100%;
     text-align: center;
     transition: 200ms;
+    -webkit-transition: 200ms;
     cursor: pointer;
 }
 
