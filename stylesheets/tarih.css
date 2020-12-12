@@ -92,7 +92,7 @@ header {
     font-weight: 700;
     color: whitesmoke;
     border: 0;
-    transition: transform 50ms;
+    transition: 50ms;
 }
 
 .button:hover {
@@ -174,7 +174,7 @@ a {
     width: 25%;
     height: 100%;
     text-align: center;
-    transition: transform 200ms;
+    transition: 200ms;
     cursor: pointer;
 }
 
@@ -329,6 +329,7 @@ a {
 
 .slider:hover .photo {
     animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 
 @keyframes slide {
