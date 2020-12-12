@@ -92,8 +92,7 @@ header {
     font-weight: 700;
     color: whitesmoke;
     border: 0;
-    transition: transform 50ms;
-    -webkit-transition: transform 50ms;
+    transition: all 50ms;
 }
 
 .button:hover {
@@ -107,14 +106,12 @@ header {
 .button:active {
     outline: 0;
     transform: translate(2px, 2px);
-    -webkit-transform: translate(2px, 2px);
     box-shadow: 0px 0px;
 }
 
 .button:focus {
     outline: 0;
     transform: translate(2px, 2px);
-    -webkit-transform: translate(2px, 2px);
     box-shadow: 0px 0px;
     text-decoration: none;
 }
@@ -177,8 +174,7 @@ a {
     width: 25%;
     height: 100%;
     text-align: center;
-    transition: transform 200ms;
-    -webkit-transition: transform 200ms;
+    transition: all 200ms;
     cursor: pointer;
 }
 
@@ -194,7 +190,6 @@ a {
     background-color: red;
     height: 400%;
     transform: translateY(37.5%);
-    -webkit-transform: translateY(37.5%);
     align-items: center;
     flex-direction: column;
 }
@@ -216,7 +211,6 @@ a {
     justify-content: space-between;
 }
 
-
 .buyticketnormal {
     display: flex;
     align-items: center;
@@ -232,7 +226,6 @@ a {
     background-color: red;
     height: 400%;
     transform: translateY(37.5%);
-    -webkit-transform: translateY(37.5%);
     flex-direction: column;
 }
 
@@ -251,7 +244,6 @@ a {
     background-color: red;
     height: 400%;
     transform: translateY(37.5%);
-    -webkit-transform: translateY(37.5%);
 }
 
 .aboutusnormal {
@@ -273,15 +265,13 @@ a {
 
 .menu:hover .fa-chevron-down {
     transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
 }
 
 .fa-chevron-down {
     font-size: 120%;
     margin-left: 7px;
     margin-bottom: 1%;
-    transition: transform 500ms;
-    -webkit-transition: transform 500ms;
+    transition: all 500ms;
     color: whitesmoke;
 }
 
