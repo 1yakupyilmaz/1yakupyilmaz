@@ -1,0 +1,423 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+*:focus {
+    outline-color: red;
+    outline-offset: 0.6rem;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 112, 102, 0.342);
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: 30px;
+    background-color: rgba(83, 83, 83, 0.712);
+    border-radius: 20px;
+}
+
+/* Header */
+
+header {
+    height: 4rem;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.fa-university {
+    font-size: 350%;
+    color: whitesmoke;
+    margin-bottom: 4%;
+}
+
+.logotext {
+    margin-left: 2%;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logbuttons {
+    margin-right: 2%;
+}
+
+.button {
+    height: 2.5rem;
+    width: 4.2rem;
+    border-radius: 20px;
+    font-size: 120%;
+    font-weight: 700;
+    color: whitesmoke;
+    border: 0;
+    transition: 50ms;
+}
+
+.button:hover {
+    color:black;
+    cursor: pointer;
+}
+.button:enabled {
+    outline: 0;
+}
+
+.button:active {
+    outline: 0;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
+}
+
+.button:focus {
+    outline: 0;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
+    text-decoration: none;
+}
+
+.buttona:focus {
+    outline: none;
+}
+
+.signup {
+    background-color: #ff5e42;
+    box-shadow: rgb(197, 148, 148) 3px 3px;
+    margin-right: 5px;
+}
+
+.signup:active {
+    background-color: #ce2d11;
+}
+
+.login {
+    background-color: #747dff;
+    box-shadow: rgb(184, 172, 147) 3px 3px;
+}
+
+.login:active {
+    background-color: #1821a8;
+}
+
+/* Navigation */
+
+nav {
+    top: 0%;
+    width: 100%;
+    height: 3.7rem;
+    background-color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    font-size: 16px;
+    font-weight: 650;
+    margin-bottom: 3rem;
+    z-index: 1;
+}
+
+#mainpage {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.home:hover {
+    background-color: red;
+}
+
+.inmenu:hover {
+    background-color: #444;
+}
+
+.sections:hover {
+    background-color: red;
+    height: 400%;
+    transform: translateY(37.5%);
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionsnormal {
+    display: flex;
+    align-items: center;
+}
+
+.sectionshover {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sections:hover .sectionshover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.buyticketnormal {
+    display: flex;
+    align-items: center;
+}
+
+.buytickethover {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.buyticket:hover {
+    background-color: red;
+    height: 400%;
+    transform: translateY(37.5%);
+    flex-direction: column;
+}
+
+.buyticket:hover .buytickethover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutus:hover {
+    background-color: red;
+    height: 400%;
+    transform: translateY(37.5%);
+}
+
+.aboutusnormal {
+    display: flex;
+    align-items: center;
+}
+
+.aboutushover {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus:hover .aboutushover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+    font-size: 120%;
+    margin-left: 7px;
+    margin-bottom: 1%;
+    transition: transform 500ms;
+    color: whitesmoke;
+}
+
+/* Scroll Up Button */
+
+.fa-chevron-circle-up {
+    position: fixed;
+    bottom: 5rem;
+    right: 2.5rem;
+    color: rgba(255, 91, 118, 0.63);
+    font-size: 300%;
+    box-shadow: 7px 7px 5px darkgray;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.fa-chevron-circle-up:hover {
+    color: rgba(255, 38, 38, 0.904);
+}
+
+.fa-chevron-circle-up:focus {
+    text-decoration: none;
+}
+
+/* Content */
+
+.slider {
+    width: 80%;
+    height: 30rem;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.photocontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    background-color: #666;
+    height: 100%;
+    width: 100%;
+    margin: 0.5rem;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 2s;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.slider:hover .photo {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-203%);
+    }
+}
+
+.photo1 {
+    background-image: url(../img/tarih/1.jpg);
+}
+
+.photo2 {
+    background-image: url(../img/tarih/2.jpg);
+}
+
+.photo3 {
+    background-image: url(../img/tarih/1.jpg);
+}
+
+main h1 {
+    text-align: center;
+}
+
+p {
+    width: 75%;
+    margin: auto;
+    line-height: 200%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Footer */
+
+footer {
+    color: whitesmoke;
+    width: 100%;
+    height: 3.7rem;
+    background-color: #333;
+    text-align: center;
+    padding-top: 0.2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 1000px) {
+
+}
+
+/* Mobile Small Screen */
+
+@media screen and (max-width: 450px) {
+
+    .fa-university {
+        font-size: 320%;
+    }
+    
+    .logotext {
+        margin-left: 2%;
+        font-size: 26px;
+    }
+
+    .fa-chevron-down {
+        font-size: 100%;
+        margin-left: 4px;
+        margin-bottom: 1%;
+    }
+
+    nav {
+        font-size: 15px;
+        padding-right: 0.5rem;
+    }
+    
+    #mainpage {
+        padding-top: 0.09rem;
+    }
+    
+    main p {
+        font-size: 15px;
+    }
+
+
+}
