@@ -92,7 +92,8 @@ header {
     font-weight: 700;
     color: whitesmoke;
     border: 0;
-    transition: 50ms;
+    -webkit-transition: all 50ms;
+    transition: all 50ms;
 }
 
 .button:hover {
@@ -174,7 +175,8 @@ a {
     width: 25%;
     height: 100%;
     text-align: center;
-    transition: 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
     cursor: pointer;
 }
 
@@ -272,6 +274,7 @@ a {
     font-size: 120%;
     margin-left: 7px;
     margin-bottom: 1%;
+    -webkit-transition: transform 500ms;
     transition: transform 500ms;
     color: whitesmoke;
 }
