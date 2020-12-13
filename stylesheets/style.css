@@ -92,8 +92,7 @@ header {
     font-weight: 700;
     color: whitesmoke;
     border: 0;
-    -webkit-transition: all 50ms;
-    transition: all 50ms;
+    transition: 50ms;
 }
 
 .button:hover {
@@ -175,8 +174,7 @@ a {
     width: 25%;
     height: 100%;
     text-align: center;
-    -webkit-transition: all 200ms;
-    transition: all 200ms;
+    transition: 200ms;
     cursor: pointer;
 }
 
@@ -191,7 +189,7 @@ a {
 .sections:hover {
     background-color: red;
     height: 400%;
-    transform: translateY(37.5%);
+    transform: translateY(89px);
     align-items: center;
     flex-direction: column;
 }
@@ -228,7 +226,7 @@ a {
 .buyticket:hover {
     background-color: red;
     height: 400%;
-    transform: translateY(37.5%);
+    transform: translateY(89px);
     flex-direction: column;
 }
 
@@ -274,7 +272,6 @@ a {
     font-size: 120%;
     margin-left: 7px;
     margin-bottom: 1%;
-    -webkit-transition: transform 500ms;
     transition: transform 500ms;
     color: whitesmoke;
 }
