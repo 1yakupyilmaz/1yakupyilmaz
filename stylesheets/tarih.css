@@ -176,6 +176,7 @@ a {
     text-align: center;
     transition: 200ms;
     cursor: pointer;
+    z-index: 1;
 }
 
 .home:hover {
@@ -192,23 +193,27 @@ a {
     transform: translateY(37.5%);
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .sectionsnormal {
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .sectionshover {
     display: none;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .sections:hover .sectionshover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
 }
 
 
