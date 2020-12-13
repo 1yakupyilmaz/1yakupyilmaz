@@ -189,7 +189,7 @@ a {
 .sections:hover {
     background-color: red;
     height: 400%;
-    transform: translateY(89px);
+    transform: translateY(37.5%);
     align-items: center;
     flex-direction: column;
 }
@@ -226,7 +226,7 @@ a {
 .buyticket:hover {
     background-color: red;
     height: 400%;
-    transform: translateY(89px);
+    transform: translateY(37.5%);
     flex-direction: column;
 }
 
