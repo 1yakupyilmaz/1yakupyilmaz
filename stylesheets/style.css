@@ -178,7 +178,7 @@ a {
     cursor: pointer;
 }
 
-.home:hover {
+.home::hover {
     background-color: red;
 }
 
