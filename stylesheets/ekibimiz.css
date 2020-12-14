@@ -24,7 +24,10 @@ body {
     font-family: sans-serif;
     font-size: 14px;
     box-sizing: border-box;
-    position: relative;
+    background-image: url(../img/ekibimiz/ekibimiz.jpg);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
 }
 
 *:focus {
@@ -299,68 +302,14 @@ a {
 
 /* Content */
 
-.slider {
-    width: 80%;
-    height: 30rem;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 4rem;
-}
-
-.photocontainer {
-    width: 100%;
-    height: 100%;
-}
-
-.photo {
-    background-color: #666;
-    height: 100%;
-    width: 100%;
-    margin: 0.5rem;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    animation-delay: 2s;
-    animation-name: slide;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.slider:hover .photo {
-    animation-play-state: paused;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateY(0%);
-    }
-
-    100% {
-        transform: translateY(-203%);
-    }
-}
-
-.photo1 {
-    background-image: url(../img/modern/1.jpg);
-}
-
-.photo2 {
-    background-image: url(../img/modern/2.jpg);
-}
-
-.photo3 {
-    background-image: url(../img/modern/1.jpg);
-}
-
 main h1 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 main h2 {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     text-align: center;
 }
 
@@ -372,8 +321,10 @@ main h2 {
 .blablatext p {
     font-size: 18px;
     line-height: 200%;
-    text-align: justify;
+    text-align: center;
+    margin-bottom: 5rem;
 }
+
 
 /* Footer */
 
@@ -394,6 +345,27 @@ footer {
 /* Desktop Version */
 
 @media screen and (min-width: 1000px) {
+
+.flexphototext {
+    flex-direction: row;
+}
+
+.photo {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+.text {
+    height: 100%;
+    width: 50%;
+    margin-top: 15%;
+}
+
+.text p {
+    width: 80%;
+    margin: auto;
+}
 
 }
 

@@ -24,7 +24,12 @@ body {
     font-family: sans-serif;
     font-size: 14px;
     box-sizing: border-box;
-    position: relative;
+    background-image: url(../img/iletisim/iletisim.jpg);
+    background-color: #888;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
 }
 
 *:focus {
@@ -299,58 +304,74 @@ a {
 
 /* Content */
 
-.slider {
-    width: 80%;
-    height: 30rem;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 4rem;
-}
-
-.photocontainer {
+.socialcontainer {
     width: 100%;
-    height: 100%;
+    height: 50rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
-.photo {
-    background-color: #666;
-    height: 100%;
-    width: 100%;
-    margin: 0.5rem;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    animation-delay: 2s;
-    animation-name: slide;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.social {
+    width: 75%;
+    height: 13rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(190, 190, 190, 0.568);
+    padding-right: 3%;
+    padding-left: 3%;
+    align-items: center;
+    cursor: pointer;
 }
 
-.slider:hover .photo {
-    animation-play-state: paused;
+.socialtext {
+    width: 50%;
+    font-size: 18px;
+    text-align: end;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateY(0%);
-    }
-
-    100% {
-        transform: translateY(-203%);
-    }
+.social:hover {
+    justify-content: center;
+}
+.social:hover .socialtext {
+    display: none;
 }
 
-.photo1 {
-    background-image: url(../img/modern/1.jpg);
+.facebook {
+    float: right;
 }
 
-.photo2 {
-    background-image: url(../img/modern/2.jpg);
+.instagram p {
+    text-align: start;
+    float: left;
 }
 
-.photo3 {
-    background-image: url(../img/modern/1.jpg);
+.twitter {
+    float: right;
+}
+
+/* Sosyal Medya Logoları */
+
+.social .fab {
+    font-size: 1400%; 
+}
+
+.fa-facebook-square {
+    color: #4267B2;
+}
+
+.social .fa-instagram {
+    font-size: 1200%;
+    padding: 4px 15px 4px 15px;
+    border-radius: 40px;
+    color: rgba(209, 209, 209, 0.671);
+    background:linear-gradient(45deg,
+     #405de6, #b4b4b4, #833ab4,
+      #c13584, #e1306c, #fd1d1d);
+}
+
+.fa-twitter-square {
+    color: #1DA1F2;
 }
 
 main h1 {
@@ -375,6 +396,7 @@ main h2 {
     text-align: justify;
 }
 
+
 /* Footer */
 
 footer {
@@ -394,6 +416,27 @@ footer {
 /* Desktop Version */
 
 @media screen and (min-width: 1000px) {
+
+.flexphototext {
+    flex-direction: row;
+}
+
+.photo {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+.text {
+    height: 100%;
+    width: 50%;
+    margin-top: 15%;
+}
+
+.text p {
+    width: 80%;
+    margin: auto;
+}
 
 }
 
@@ -428,6 +471,57 @@ footer {
     main p {
         font-size: 15px;
     }
+
+    /* Sosyal */
+
+}
+
+
+@media screen and (max-width: 620px) {
+
+.socialcontainer {
+    height: 100rem;
+}
+
+.social {
+    height: 30rem;
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.socialtext {
+    text-align: justify;
+}
+
+.facebook {
+    float: right;
+}
+
+.instagram {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.instagram p {
+    text-align: justify;
+    float: left;
+}
+
+.twitter {
+    float: right;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+.social .fab {
+    font-size: 1000%;
+}
 
 
 }
