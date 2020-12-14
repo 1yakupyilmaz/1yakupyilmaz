@@ -330,6 +330,13 @@ a {
     text-align: end;
 }
 
+.instagram:hover {
+    cursor: not-allowed;
+}
+.socialtext span {
+    color: red;
+}
+
 .social:hover {
     justify-content: center;
 }
@@ -387,6 +394,11 @@ main h2 {
 
 .blablatext {
     width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.blablatext h1 {
     margin: auto;
 }
 
