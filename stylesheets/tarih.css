@@ -453,3 +453,12 @@ footer {
 
 
 }
+
+@media screen and (min-height: 1100px) {
+
+    footer {
+        margin-top: 30rem;
+    }
+    
+    
+}

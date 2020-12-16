@@ -406,18 +406,18 @@ footer {
 }
 
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 978px) {
 
-    footer {
-        margin-top: 20rem;
-    }
+footer {
+    margin-top: 20rem;
+}
     
-    }
+}
+
+@media screen and (min-height: 1100px) {
     
-    @media screen and (min-height: 1200px) {
-    
-        footer {
-            margin-top: 38rem;
-        }
+footer {
+margin-top: 45rem;
+}
         
-        }
+}
