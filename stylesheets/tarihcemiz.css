@@ -404,3 +404,20 @@ footer {
 
 
 }
+
+
+@media screen and (min-height: 1000px) {
+
+    footer {
+        margin-top: 20rem;
+    }
+    
+    }
+    
+    @media screen and (min-height: 1200px) {
+    
+        footer {
+            margin-top: 38rem;
+        }
+        
+        }
