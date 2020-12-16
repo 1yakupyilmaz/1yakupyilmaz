@@ -341,7 +341,7 @@ main h2 {
 
 input:focus {
     outline: none;
-    background-image: linear-gradient(to right, rgb(238, 238, 238), rgb(179, 179, 179));
+    box-shadow: inset rgb(49, 117, 139) 2px 2px 14px;
 }
 
 main button {
