@@ -25,6 +25,9 @@ body {
     font-size: 14px;
     box-sizing: border-box;
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *:focus {
@@ -353,6 +356,10 @@ a {
     background-image: url(../img/sanat/1.jpg);
 }
 
+main {
+    margin-bottom: 8rem;
+}
+
 main h1 {
     text-align: center;
     margin-bottom: 3rem;
@@ -384,7 +391,7 @@ footer {
     background-color: #333;
     text-align: center;
     padding-top: 0.2rem;
-    margin-top: 8rem;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
@@ -428,15 +435,6 @@ footer {
     main p {
         font-size: 15px;
     }
-
-
-}
-
-@media screen and (min-height: 1200px) {
-
-footer {
-    margin-top: 30rem;
-}
 
 
 }

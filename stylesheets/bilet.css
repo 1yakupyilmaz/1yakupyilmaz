@@ -25,6 +25,9 @@ body {
     font-size: 14px;
     box-sizing: border-box;
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *:focus {
@@ -299,6 +302,10 @@ a {
 
 /* Content */
 
+main {
+    margin-bottom: 8rem;
+}
+
 main h1 {
     text-align: center;
     margin-bottom: 3rem;
@@ -335,7 +342,7 @@ footer {
     background-color: #333;
     text-align: center;
     padding-top: 0.2rem;
-    margin-top: 8rem;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
@@ -401,30 +408,5 @@ footer {
         font-size: 15px;
     }
 
-
-}
-
-
-@media screen and (min-height: 777px) {
-
-footer {
-    margin-top: 20rem;
-}
-
-}
-
-@media screen and (min-height: 1000px) {
-
-    footer {
-        margin-top: 38rem;
-    }
-    
-    }
-
-@media screen and (min-height: 1200px) {
-
-footer {
-    margin-top: 53rem;
-}
 
 }

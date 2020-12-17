@@ -24,6 +24,9 @@ body {
     font-family: sans-serif;
     font-size: 14px;
     box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *:focus {
@@ -298,6 +301,10 @@ a {
 
 /* Content */
 
+main {
+    margin-bottom: 8rem;
+}
+
 main h1 {
     text-align: center;
     margin-bottom: 3rem;
@@ -330,7 +337,7 @@ footer {
     background-color: #333;
     text-align: center;
     padding-top: 0.2rem;
-    margin-top: 8rem;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
